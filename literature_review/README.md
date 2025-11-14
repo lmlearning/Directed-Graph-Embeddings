@@ -6,13 +6,13 @@ This directory contains a comprehensive literature review on graph embeddings fo
 
 ## Contents
 
-- **search_strategy.md** - Detailed search strategy and comprehensive listing of all papers found (71+ papers)
-- **references.bib** - BibTeX file with all references (71+ entries)
-- **pdfs/** - Directory containing downloaded PDFs (35+ papers)
+- **search_strategy.md** - Detailed search strategy and comprehensive listing of all papers found (98+ papers)
+- **references.bib** - BibTeX file with all references (98+ entries)
+- **pdfs/** - Directory containing downloaded PDFs (61 papers)
 
 ## Statistics
 
-- **Total Papers Identified**: 71+
+- **Total Papers Identified**: 98+
 - **Survey Papers**: 9
 - **Foundational Methods**: 4 (DeepWalk, LINE, node2vec, struc2vec)
 - **Directed Graph-Specific Methods**: 5 (HOPE, ATP, DGCN, etc.)
@@ -36,8 +36,27 @@ This directory contains a comprehensive literature review on graph embeddings fo
   - Attributed networks (TADW)
   - Spectral methods (GWNN, ChebNet)
   - Large-scale deployment (PinSage)
+- **Additional Papers from Systematic Survey Bibliography Review**: 12
+  - Foundational spectral methods (Bruna 2014, Laplacian Eigenmaps)
+  - Scalability (FastGCN)
+  - Learned random walks (Watch Your Step)
+  - Probabilistic embeddings (Graph2Gauss)
+  - Graph generation (GraphRNN, Junction Tree VAE, MolGAN)
+  - Graph similarity (Graph Matching Networks)
+  - Benchmarking (Open Graph Benchmark)
+  - Original GNN model (Scarselli 2009)
+  - Graph kernels (Weisfeiler-Lehman)
+- **Advanced Topics - Pooling, Contrastive Learning, Expressiveness, Temporal**: 15
+  - Graph pooling (DiffPool, SAGPool, Graph U-Net)
+  - Contrastive learning (GraphCL, GRACE, BGRL, GraphMAE)
+  - Expressiveness theory (k-GNN, Provably Powerful Networks)
+  - GNN limitations (Over-squashing via curvature)
+  - Heterogeneous/relational (R-GCN)
+  - Graph Transformers (GraphGPS, Graphormer)
+  - Temporal graphs (TGN)
+  - Hyperbolic embeddings (Hyperbolic GNN)
 - **Other Categories**: Link prediction, temporal graphs, applications, self-supervised learning, etc.
-- **Downloaded PDFs**: 35+ papers
+- **Downloaded PDFs**: 61 papers
 
 ## Key Categories
 

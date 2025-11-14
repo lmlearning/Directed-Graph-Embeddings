@@ -596,3 +596,257 @@
 
 ---
 
+### 15. Additional Papers from Systematic Survey Bibliography Review
+
+#### 15.1 **FastGCN: Fast Learning with Graph Convolutional Networks via Importance Sampling** (2018)
+- **Authors**: Chen, Jie; Ma, Tengfei; Xiao, Cao
+- **Publication**: ICLR 2018; arXiv:1801.10247
+- **URL**: https://arxiv.org/abs/1801.10247
+- **Summary**: Interprets graph convolutions as integral transforms; uses importance sampling to reduce per-batch complexity from O(|E|) to O(|V|)
+- **Key Focus**: Scalability, efficient training
+- **Innovation**: Batch-wise training on large graphs by sampling nodes instead of expanding neighborhoods
+- **Performance**: Orders of magnitude faster than full-batch methods while maintaining accuracy
+
+#### 15.2 **Spectral Networks and Locally Connected Networks on Graphs** (2014)
+- **Authors**: Bruna, Joan; Zaremba, Wojciech; Szlam, Arthur; LeCun, Yann
+- **Publication**: ICLR 2014; arXiv:1312.6203
+- **URL**: https://arxiv.org/abs/1312.6203
+- **Summary**: Foundational work extending CNNs to graphs using spectral graph theory; introduces graph convolution via graph Laplacian eigendecomposition
+- **Key Focus**: Spectral methods, foundational GNN architecture
+- **Innovation**: First deep learning architecture for graph-structured data
+- **Historical Significance**: Pioneered the field of graph neural networks
+
+#### 15.3 **Watch Your Step: Learning Node Embeddings via Graph Attention** (2018)
+- **Authors**: Abu-El-Haija, Sami; Perozzi, Bryan; Al-Rfou, Rami; Alemi, Alex
+- **Publication**: NeurIPS 2018; arXiv:1710.09599
+- **URL**: https://arxiv.org/abs/1710.09599
+- **Summary**: Uses graph attention to learn random walk-based embeddings with trainable transition matrices
+- **Key Focus**: Learned random walks, attention mechanisms
+- **Innovation**: Attention mechanism determines importance of different walk lengths
+- **Performance**: Outperforms fixed random walk methods (DeepWalk, node2vec) on multiple benchmarks
+
+#### 15.4 **Graph2Gauss: Learning Node Embeddings as Gaussian Distributions** (2018)
+- **Authors**: Bojchevski, Aleksandar; Günnemann, Stephan
+- **Publication**: ICLR 2018
+- **URL**: https://openreview.net/forum?id=SJU4ayYgl
+- **Summary**: Represents nodes as Gaussian distributions instead of point embeddings; captures uncertainty and semantic spread
+- **Key Focus**: Uncertainty quantification, probabilistic embeddings
+- **Innovation**: Uses KL divergence for ranking, enables reasoning about node similarity confidence
+- **Performance**: Better calibrated predictions, especially for rare/uncertain connections
+
+#### 15.5 **GraphRNN: Generating Realistic Graphs with Deep Auto-regressive Models** (2018)
+- **Authors**: You, Jiaxuan; Ying, Rex; Ren, Xiang; Hamilton, William L.; Leskovec, Jure
+- **Publication**: ICML 2018; arXiv:1802.08773
+- **URL**: https://arxiv.org/abs/1802.08773
+- **Summary**: Auto-regressive model for graph generation using RNNs; generates graphs sequentially node-by-node and edge-by-edge
+- **Key Focus**: Graph generation, auto-regressive models
+- **Innovation**: Sequential generation captures complex graph structures
+- **Performance**: Generates realistic graphs matching real-world properties across multiple domains
+
+#### 15.6 **Junction Tree Variational Autoencoder for Molecular Graph Generation** (2018)
+- **Authors**: Jin, Wengong; Barzilay, Regina; Jaakkola, Tommi
+- **Publication**: ICML 2018; arXiv:1802.04364
+- **URL**: https://arxiv.org/abs/1802.04364
+- **Summary**: Generates molecular graphs by constructing tree structure of subgraphs (scaffolds); ensures chemical validity
+- **Key Focus**: Molecular generation, VAE, tree-structured encoding
+- **Innovation**: Junction tree representation ensures 100% chemical validity
+- **Performance**: State-of-the-art in valid molecule generation
+
+#### 15.7 **MolGAN: An Implicit Generative Model for Small Molecular Graphs** (2018)
+- **Authors**: De Cao, Nicola; Kipf, Thomas
+- **Publication**: ICML 2018 Workshop; arXiv:1805.11973
+- **URL**: https://arxiv.org/abs/1805.11973
+- **Summary**: GAN-based approach for molecular graph generation; uses reinforcement learning for chemical property optimization
+- **Key Focus**: Molecular generation, GAN, drug discovery
+- **Innovation**: Combines GAN with RL reward for goal-directed molecule generation
+- **Application**: Drug discovery, materials science
+
+#### 15.8 **Graph Matching Networks for Learning the Similarity of Graph Structured Objects** (2019)
+- **Authors**: Li, Yujia; Gu, Chenjie; Dullien, Thomas; Vinyals, Oriol; Kohli, Pushmeet
+- **Publication**: ICML 2019; arXiv:1904.12787
+- **URL**: https://arxiv.org/abs/1904.12787
+- **Summary**: Neural architecture for computing similarity between pairs of graphs; uses cross-graph attention and matching
+- **Key Focus**: Graph similarity, graph matching
+- **Innovation**: Cross-graph attention mechanism for pairwise node comparisons
+- **Applications**: Similarity search, duplicate detection, verification
+
+#### 15.9 **Open Graph Benchmark: Datasets for Machine Learning on Graphs** (2020)
+- **Authors**: Hu, Weihua; Fey, Matthias; Zitnik, Marinka; Dong, Yuxiao; Ren, Hongyu; Liu, Bowen; Catasta, Michele; Leskovec, Jure
+- **Publication**: NeurIPS 2020; arXiv:2005.00687
+- **URL**: https://arxiv.org/abs/2005.00687
+- **Summary**: Comprehensive collection of realistic, large-scale graph datasets with standardized evaluation protocols
+- **Key Focus**: Benchmarking, standardized evaluation
+- **Datasets**: Node property prediction, link prediction, graph property prediction across diverse domains
+- **Impact**: De facto standard for evaluating graph ML methods
+- **Website**: https://ogb.stanford.edu/
+
+#### 15.10 **The Graph Neural Network Model** (2009)
+- **Authors**: Scarselli, Franco; Gori, Marco; Tsoi, Ah Chung; Hagenbuchner, Markus; Monfardini, Gabriele
+- **Publication**: IEEE Transactions on Neural Networks, 2009
+- **Summary**: Original GNN paper introducing iterative message passing framework; extends recursive neural networks to graphs
+- **Key Focus**: Foundational GNN architecture, message passing
+- **Historical Significance**: Introduced the core message passing paradigm used by modern GNNs
+- **Innovation**: Fixed-point iteration for node state updates
+
+#### 15.11 **Weisfeiler-Lehman Graph Kernels** (2011)
+- **Authors**: Shervashidze, Nino; Schweitzer, Pascal; van Leeuwen, Erik Jan; Mehlhorn, Kurt; Borgwardt, Karsten M.
+- **Publication**: Journal of Machine Learning Research (JMLR), 2011
+- **URL**: https://www.jmlr.org/papers/v12/shervashidze11a.html
+- **Summary**: Classical graph kernel method based on Weisfeiler-Lehman graph isomorphism test; compares graphs via iterative node relabeling
+- **Key Focus**: Graph kernels, graph comparison
+- **Innovation**: Fast algorithm with polynomial time complexity for graph similarity
+- **Historical Significance**: Theoretical foundation for understanding GNN expressiveness (1-WL test)
+- **Performance**: Efficient computation, strong baseline for graph classification
+
+#### 15.12 **Laplacian Eigenmaps for Dimensionality Reduction and Data Representation** (2003)
+- **Authors**: Belkin, Mikhail; Niyogi, Partha
+- **Publication**: Neural Computation, 2003
+- **Summary**: Foundational manifold learning method using graph Laplacian; preserves local neighborhood structure via spectral embedding
+- **Key Focus**: Spectral methods, manifold learning, dimensionality reduction
+- **Innovation**: Locality-preserving embeddings based on graph Laplacian eigenvectors
+- **Historical Significance**: One of the earliest spectral graph embedding methods
+- **Theory**: Connected to heat kernel, random walks, and diffusion processes on graphs
+
+---
+
+### 16. Advanced Topics: Pooling, Contrastive Learning, Expressiveness, and Temporal Graphs
+
+#### 16.1 **DiffPool: Hierarchical Graph Representation Learning with Differentiable Pooling** (2018)
+- **Authors**: Ying, Zhitao; You, Jiaxuan; Morris, Christopher; Ren, Xiang; Hamilton, Will; Leskovec, Jure
+- **Publication**: NeurIPS 2018
+- **URL**: https://arxiv.org/abs/1806.08804
+- **Summary**: Differentiable graph pooling module generating hierarchical representations; learns cluster assignment matrix end-to-end
+- **Key Focus**: Graph-level tasks, hierarchical pooling
+- **Innovation**: Soft cluster assignments via neural network; combined with GNN for end-to-end learning
+- **Performance**: State-of-the-art on graph classification benchmarks
+
+#### 16.2 **SAGPool: Self-Attention Graph Pooling** (2019)
+- **Authors**: Lee, Junhyun; Lee, Inyeop; Kang, Jaewoo
+- **Publication**: ICML 2019; arXiv:1904.08082
+- **URL**: https://arxiv.org/abs/1904.08082
+- **Summary**: Self-attention-based graph pooling considering both node features and graph topology; selects important nodes based on learned scores
+- **Key Focus**: Graph pooling, node selection
+- **Innovation**: Self-attention mechanism for importance scoring; maintains graph topology
+- **Performance**: Improved performance on graph classification tasks
+
+#### 16.3 **GraphCL: Contrastive Self-Supervised Learning of Graph Representations** (2020)
+- **Authors**: You, Yuning; Chen, Tianlong; Sui, Yongduo; Chen, Ting; Wang, Zhangyang; Shen, Yang
+- **Publication**: NeurIPS 2020; arXiv:2007.08025
+- **URL**: https://arxiv.org/abs/2007.08025
+- **Summary**: Framework for contrastive learning on graphs using four types of graph augmentations; maximizes agreement between augmented views
+- **Key Focus**: Self-supervised learning, data augmentation
+- **Innovation**: Systematic study of graph augmentation strategies for contrastive learning
+- **Performance**: Transferable representations competitive with supervised methods
+
+#### 16.4 **GRACE: Graph Contrastive Learning with Adaptive Augmentation** (2020)
+- **Authors**: Zhu, Yanqiao; Xu, Yichen; Yu, Feng; Liu, Qiang; Wu, Shu; Wang, Liang
+- **Publication**: WWW 2020; arXiv:2006.04131
+- **URL**: https://arxiv.org/abs/2006.04131
+- **Summary**: Node-level contrastive learning framework with adaptive graph augmentation; maximizes mutual information between node representations
+- **Key Focus**: Node representation learning, contrastive methods
+- **Innovation**: Corruption schemes for graph structure and node features
+- **Performance**: Strong results on node classification without labels
+
+#### 16.5 **BGRL: Bootstrapped Graph Representation Learning** (2021)
+- **Authors**: Thakoor, Shantanu; Tallec, Corentin; Azar, Mohammad Gheshlaghi; Munos, Rémi; Veličković, Petar; Valko, Michal
+- **Publication**: arXiv:2102.06514
+- **URL**: https://arxiv.org/abs/2102.06514
+- **Summary**: Self-supervised learning without negative samples; online encoder predicts target encoder output via bootstrapping
+- **Key Focus**: Scalability, negative-sample-free contrastive learning
+- **Innovation**: Exponential moving average for target network; scales to very large graphs
+- **Performance**: Competitive with methods using negative samples; more scalable
+
+#### 16.6 **Weisfeiler and Leman Go Neural: Higher-order Graph Neural Networks** (2019)
+- **Authors**: Morris, Christopher; Ritzert, Martin; Fey, Matthias; Hamilton, William L.; Lenssen, Jan Eric; Rattan, Gaurav; Grohe, Martin
+- **Publication**: AAAI 2019; arXiv:1810.02244
+- **URL**: https://arxiv.org/abs/1810.02244
+- **Summary**: k-dimensional WL test for GNNs; k-GNN operates on k-tuples of nodes with provable expressive power
+- **Key Focus**: Expressiveness, higher-order methods
+- **Innovation**: Theoretically grounded architecture matching k-WL test expressiveness
+- **Performance**: More powerful than standard MPNNs; distinguishes more non-isomorphic graphs
+
+#### 16.7 **Provably Powerful Graph Networks** (2019)
+- **Authors**: Maron, Haggai; Ben-Hamu, Heli; Serviansky, Hadar; Lipman, Yaron
+- **Publication**: NeurIPS 2019; arXiv:1905.11136
+- **URL**: https://arxiv.org/abs/1905.11136
+- **Summary**: Characterizes architectures equivalent to k-order WL test; introduces k-IGN with universal approximation on bounded graphs
+- **Key Focus**: Theoretical expressiveness, invariant/equivariant layers
+- **Innovation**: Exact characterization of equivariant linear layers on graphs
+- **Theory**: Universal approximation theorem for graph functions
+
+#### 16.8 **Understanding Over-squashing and Bottlenecks on Graphs via Curvature** (2021)
+- **Authors**: Topping, Jake; Di Giovanni, Francesco; Chamberlain, Benjamin Paul; Dong, Xiaowen; Bronstein, Michael M.
+- **Publication**: ICLR 2022; arXiv:2111.14522
+- **URL**: https://arxiv.org/abs/2111.14522
+- **Summary**: Identifies over-squashing phenomenon in MPNNs; relates it to graph curvature and proposes graph rewiring solutions
+- **Key Focus**: GNN limitations, graph structure
+- **Innovation**: Connects over-squashing to Ollivier-Ricci curvature; curvature-based rewiring
+- **Impact**: Influential work on understanding and mitigating GNN bottlenecks
+
+#### 16.9 **R-GCN: Modeling Relational Data with Graph Convolutional Networks** (2018)
+- **Authors**: Schlichtkrull, Michael; Kipf, Thomas N.; Bloem, Peter; van den Berg, Rianne; Titov, Ivan; Welling, Max
+- **Publication**: ESWC 2018; arXiv:1703.06103
+- **URL**: https://arxiv.org/abs/1703.06103
+- **Summary**: Extends GCN to multi-relational directed graphs; learns relation-specific transformations for knowledge graphs
+- **Key Focus**: Knowledge graphs, link prediction, heterogeneous graphs
+- **Innovation**: Relation-specific weight matrices with basis/block-diagonal regularization
+- **Application**: Knowledge base completion, entity classification
+- **Performance**: 29.8% improvement on FB15k-237 over decoder-only baseline
+
+#### 16.10 **GraphGPS: Recipe for a General, Powerful, Scalable Graph Transformer** (2022)
+- **Authors**: Rampášek, Ladislav; Galkin, Michael; Dwivedi, Vijay Prakash; Luu, Anh Tuan; Wolf, Guy; Beaini, Dominique
+- **Publication**: NeurIPS 2022; arXiv:2205.12454
+- **URL**: https://arxiv.org/abs/2205.12454
+- **Summary**: Combines local MPNN with global attention and positional encodings; achieves linear complexity O(N+E)
+- **Key Focus**: Graph Transformers, scalability
+- **Innovation**: Recipe combining three ingredients: PE, local MP, global attention
+- **Performance**: State-of-the-art on diverse benchmarks with linear complexity
+- **GitHub**: https://github.com/rampasek/GraphGPS
+
+#### 16.11 **Graphormer: Do Transformers Really Perform Bad for Graph Representation?** (2021)
+- **Authors**: Ying, Chengxuan; Cai, Tianle; Luo, Shengjie; Zheng, Shuxin; Ke, Guolin; He, Di; Shen, Yanming; Liu, Tie-Yan
+- **Publication**: NeurIPS 2021; arXiv:2106.05234
+- **URL**: https://arxiv.org/abs/2106.05234
+- **Summary**: Pure Transformer architecture for graphs with centrality encoding and spatial encoding (shortest paths as attention bias)
+- **Key Focus**: Graph Transformers, structural encodings
+- **Innovation**: Structural and spatial encodings for graphs in Transformers
+- **Performance**: Wins OGB-LSC (quantum chemistry) challenge; strong on diverse tasks
+
+#### 16.12 **Temporal Graph Networks for Deep Learning on Dynamic Graphs** (2020)
+- **Authors**: Rossi, Emanuele; Chamberlain, Ben; Frasca, Fabrizio; Eynard, Davy; Monti, Federico; Bronstein, Michael
+- **Publication**: ICML 2020 Workshop; arXiv:2006.10637
+- **URL**: https://arxiv.org/abs/2006.10637
+- **Summary**: Generic framework for temporal graphs with memory modules; generalizes JODIE and TGAT as special cases
+- **Key Focus**: Temporal graphs, continuous-time dynamic graphs
+- **Innovation**: Memory modules + temporal point process; efficient temporal aggregation
+- **Performance**: Outperforms previous methods while being computationally efficient
+
+#### 16.13 **Graph U-Net** (2019)
+- **Authors**: Gao, Hongyang; Ji, Shuiwang
+- **Publication**: ICML 2019
+- **Summary**: Hierarchical graph pooling and unpooling operations; U-Net architecture adapted for graphs
+- **Key Focus**: Graph pooling, encoder-decoder architecture
+- **Innovation**: gPool and gUnpool operations maintaining connectivity
+- **Application**: Graph classification, node classification with limited labels
+
+#### 16.14 **Hyperbolic Graph Neural Networks** (2019)
+- **Authors**: Liu, Qi; Nickel, Maximilian; Kiela, Douwe
+- **Publication**: NeurIPS 2019; arXiv:1910.12933
+- **URL**: https://arxiv.org/abs/1910.12933
+- **Summary**: Neural networks operating in hyperbolic space; leverages hierarchical structure of graphs
+- **Key Focus**: Hyperbolic geometry, hierarchical data
+- **Innovation**: Graph neural operations in hyperbolic (Poincaré) space
+- **Theory**: Better suited for scale-free, hierarchical graphs than Euclidean space
+- **Performance**: Fewer dimensions needed for same representational capacity
+
+#### 16.15 **GraphMAE: Self-Supervised Masked Graph Autoencoders** (2022)
+- **Authors**: Hou, Zhenyu; Liu, Xiao; Cen, Yukuo; Dong, Yuxiao; Yang, Hongxia; Wang, Chunjie; Tang, Jie
+- **Publication**: KDD 2022; arXiv:2205.10803
+- **URL**: https://arxiv.org/abs/2205.10803
+- **Summary**: Masked autoencoder approach for graphs; masks node features and reconstructs them
+- **Key Focus**: Generative self-supervised learning
+- **Innovation**: Feature reconstruction with re-masking decoding; scaled cosine error
+- **Performance**: Strong transfer learning results; alternative to contrastive methods
+
+---
+
