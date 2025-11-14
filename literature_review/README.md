@@ -6,20 +6,20 @@ This directory contains a comprehensive literature review on graph embeddings fo
 
 ## Contents
 
-- **search_strategy.md** - Detailed search strategy and comprehensive listing of all papers found (50+ papers)
-- **references.bib** - BibTeX file with all references (50+ entries)
-- **pdfs/** - Directory containing downloaded PDFs (27 papers)
+- **search_strategy.md** - Detailed search strategy and comprehensive listing of all papers found (71+ papers)
+- **references.bib** - BibTeX file with all references (71+ entries)
+- **pdfs/** - Directory containing downloaded PDFs (35+ papers)
 
 ## Statistics
 
-- **Total Papers Identified**: 63+
+- **Total Papers Identified**: 71+
 - **Survey Papers**: 9
-- **Foundational Methods**: 4
-- **Directed Graph-Specific Methods**: 5
-- **GNN Architectures**: 6
-- **Transformer-Based Approaches**: 4
-- **Knowledge Graph Embeddings**: 3
-- **Additional Important Papers**: 13 (from survey analysis)
+- **Foundational Methods**: 4 (DeepWalk, LINE, node2vec, struc2vec)
+- **Directed Graph-Specific Methods**: 5 (HOPE, ATP, DGCN, etc.)
+- **GNN Architectures**: 6 (GCN, GraphSAGE, GAT, GIN, DiffPool, VGAE)
+- **Transformer-Based Approaches**: 4 (Transformers for Directed Graphs, DAGformer, etc.)
+- **Knowledge Graph Embeddings**: 3 (TransE, TransR, RotatE)
+- **Additional Important Papers from Survey Analysis**: 13
   - Magnetic Laplacian methods (MagNet, MSGNN)
   - Directed graph contrastive learning (DiGCL)
   - Signed directed networks (SDGNN)
@@ -29,8 +29,15 @@ This directory contains a comprehensive literature review on graph embeddings fo
   - Heterogeneous networks (HIN2Vec, HEBE)
   - Causal discovery (DAG-GNN, DAG-GCN)
   - Graph classification (DGCNN)
+- **Additional Papers from Bibliography Analysis**: 8
+  - Signed directed networks (SIDE)
+  - Scalability methods (APPNP, SGC)
+  - Global structure (GraRep)
+  - Attributed networks (TADW)
+  - Spectral methods (GWNN, ChebNet)
+  - Large-scale deployment (PinSage)
 - **Other Categories**: Link prediction, temporal graphs, applications, self-supervised learning, etc.
-- **Downloaded PDFs**: 27+ papers
+- **Downloaded PDFs**: 35+ papers
 
 ## Key Categories
 

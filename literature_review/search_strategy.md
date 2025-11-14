@@ -522,3 +522,77 @@
 
 ---
 
+### 14. Additional Papers from Bibliography Analysis
+
+#### 14.1 **SIDE: Representation Learning in Signed Directed Networks** (2018)
+- **Authors**: Kim, Junghwan; Park, Haekyu; Lee, Ji-Eun; Kang, U
+- **Publication**: WWW 2018
+- **URL**: https://datalab.snu.ac.kr/side/
+- **Summary**: General network embedding method representing both sign and direction of edges; formulates likelihood over direct and indirect signed connections
+- **Key Focus**: Signed directed networks, trust/distrust relationships
+- **Performance**: Linear scalability with optimization techniques
+- **Code**: Available at project site
+
+#### 14.2 **APPNP: Predict then Propagate** (2019)
+- **Authors**: Klicpera; Bojchevski; Günnemann
+- **Publication**: ICLR 2019; arXiv:1810.05997
+- **URL**: https://arxiv.org/abs/1810.05997
+- **Summary**: Fast approximation using relationship between GCN and PageRank; improved propagation based on personalized PageRank
+- **Key Focus**: Large adjustable neighborhoods, scalability
+- **Innovation**: Separates neural network transformation from propagation
+- **GitHub**: https://github.com/benedekrozemberczki/APPNP
+
+#### 14.3 **GraRep: Learning Graph Representations with Global Structural Information** (2015)
+- **Authors**: Cao, Shaosheng; Lu, Wei; Xu, Qiongkai
+- **Publication**: CIKM 2015
+- **Summary**: Integrates global structural information via k-step relational information; preserves k-order proximity
+- **Key Focus**: Global graph structure, higher-order proximity
+- **Performance**: Outperforms state-of-art in clustering, classification, visualization
+- **GitHub**: https://github.com/benedekrozemberczki/GraRep
+
+#### 14.4 **TADW: Network Representation Learning with Rich Text Information** (2015)
+- **Authors**: Yang, Cheng; Liu, Zhiyuan; Zhao, Deli; Sun, Maosong; Chang, Edward Y.
+- **Publication**: IJCAI 2015
+- **Summary**: Proves DeepWalk equivalence to matrix factorization; incorporates text features via inductive matrix factorization
+- **Key Focus**: Text-attributed networks, matrix factorization
+- **Innovation**: Theoretical connection between DeepWalk and matrix factorization
+- **GitHub**: https://github.com/benedekrozemberczki/TADW
+
+#### 14.5 **Graph Wavelet Neural Network (GWNN)** (2019)
+- **Authors**: Xu, Bingbing; Shen, Huawei; Cao, Qi; Qiu, Yunqi; Cheng, Xueqi
+- **Publication**: ICLR 2019; arXiv:1904.07785
+- **URL**: https://arxiv.org/abs/1904.07785
+- **Summary**: Leverages graph wavelet transform instead of graph Fourier transform; fast algorithm without eigendecomposition
+- **Key Focus**: Spectral graph learning, computational efficiency
+- **Advantages**: Sparse and localized wavelets, high interpretability
+- **GitHub**: https://github.com/benedekrozemberczki/GraphWaveletNeuralNetwork
+
+#### 14.6 **ChebNet: Spectral Filtering with Chebyshev Polynomials** (2016)
+- **Authors**: Defferrard, Michaël; Bresson, Xavier; Vandergheynst, Pierre
+- **Publication**: NIPS 2016; arXiv:1606.09375
+- **URL**: https://arxiv.org/abs/1606.09375
+- **Summary**: Generalizes CNNs to graphs using spectral graph theory; approximates spectral filters with Chebyshev polynomials
+- **Key Focus**: Spectral methods, computational efficiency
+- **Performance**: Linear computational complexity, universal to any graph structure
+- **GitHub**: https://github.com/mdeff/cnn_graph
+
+#### 14.7 **PinSage: Graph Convolutional Networks for Web-Scale Recommender Systems** (2018)
+- **Authors**: Ying, Rex; He, Ruining; Chen, Kaifeng; Eksombatchai, Pong; Hamilton, William L.; Leskovec, Jure
+- **Publication**: KDD 2018; arXiv:1806.01973
+- **URL**: https://arxiv.org/abs/1806.01973
+- **Summary**: Data-efficient GCN for web-scale recommendations; trained on 3B nodes and 18B edges at Pinterest
+- **Key Focus**: Large-scale recommendation, industrial deployment
+- **Innovation**: Random walk-based sampling, harder-and-harder training strategy
+- **Performance**: 25-30% improvement in user engagement; 10,000x larger than typical GCNs
+
+#### 14.8 **SGC: Simplifying Graph Convolutional Networks** (2019)
+- **Authors**: Wu, Felix; Souza, Amauri; Zhang, Tianyi; Fifty, Christopher; Yu, Tao; Weinberger, Kilian
+- **Publication**: ICML 2019; arXiv:1902.07153
+- **URL**: https://arxiv.org/abs/1902.07153
+- **Summary**: Removes nonlinearities and collapses weight matrices; resulting linear model = fixed low-pass filter + linear classifier
+- **Key Focus**: Simplification, computational efficiency
+- **Performance**: Competitive accuracy with 2 orders of magnitude speedup over FastGCN
+- **GitHub**: https://github.com/Tiiiger/SGC
+
+---
+
