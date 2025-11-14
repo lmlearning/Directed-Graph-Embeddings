@@ -412,3 +412,113 @@
 
 ---
 
+### 13. Additional Important Papers from Survey Analysis
+
+#### 13.1 **MagNet: A Neural Network for Directed Graphs** (2021)
+- **Authors**: Zhang et al.
+- **Publication**: NeurIPS 2021; arXiv:2102.11391
+- **URL**: https://arxiv.org/abs/2102.11391
+- **Summary**: GNN for directed graphs based on complex Hermitian matrix (magnetic Laplacian); encodes undirected structure in magnitude and directional info in phase
+- **Key Focus**: Magnetic Laplacian, spectral methods for directed graphs
+- **Innovation**: "Charge" parameter attunes spectral information to variation among directed cycles
+
+#### 13.2 **MSGNN: Magnetic Signed Graph Neural Network** (2022)
+- **Authors**: He, Perlmutter, Reinert, Cucuringu
+- **Publication**: Learning on Graphs Conference (LoG) 2022
+- **URL**: https://proceedings.mlr.press/v198/he22c.html
+- **Summary**: Natural generalization of both signed Laplacian and magnetic Laplacian; effective for incorporating signed and directional information
+- **Key Focus**: Signed directed graphs, spectral GNN
+
+#### 13.3 **DiGCL: Directed Graph Contrastive Learning** (2021)
+- **Authors**: Tong, Zekun; Liang, Yuxuan; et al.
+- **Publication**: NeurIPS 2021
+- **URL**: https://openreview.net/forum?id=s6JD_xBS31
+- **Summary**: First contrastive learning framework for directed graphs; uses Laplacian perturbation for data augmentation
+- **Key Focus**: Self-supervised learning on directed graphs
+- **Innovation**: Multi-task curriculum learning from easy-to-difficult contrastive views
+- **GitHub**: https://github.com/flyingtango/DiGCL
+
+#### 13.4 **SDGNN: Learning Node Representation for Signed Directed Networks** (2021)
+- **Authors**: Huang, Junjie; Shen, Huawei; Hou, Liang; Cheng, Xueqi
+- **Publication**: AAAI 2021; arXiv:2101.02390
+- **URL**: https://arxiv.org/abs/2101.02390
+- **Summary**: Novel GNN for signed directed networks; reconstructs link signs, directions, and signed directed triangles
+- **Key Focus**: Signed directed graphs, social network analysis
+- **Theory**: Based on status theory and balance theory from sociology
+- **GitHub**: https://github.com/huangjunjie-cs/SiGAT
+
+#### 13.5 **DGCNN: Deep Graph CNN** (2018)
+- **Authors**: Zhang, Muhan; Cui, Zhicheng; Neumann, Marion; Chen, Yixin
+- **Publication**: AAAI 2018
+- **URL**: https://muhanzhang.github.io/papers/AAAI_2018_DGCNN.pdf
+- **Summary**: End-to-end deep learning architecture for graph classification; propagation-based graph convolution + novel SortPooling layer
+- **Key Focus**: Graph classification, end-to-end learning
+- **Innovation**: SortPooling layer sorts vertex representations instead of summing
+- **GitHub**: https://github.com/muhanzhang/DGCNN
+
+#### 13.6 **MotifNet: Motif-based Graph Convolutional Network for Directed Graphs** (2018)
+- **Authors**: Monti, Federico; Otness, Karl; Bronstein, Michael M.
+- **Publication**: IEEE Data Science Workshop 2018; arXiv:1802.01572
+- **URL**: https://arxiv.org/abs/1802.01572
+- **Summary**: Graph CNN for directed graphs exploiting local graph motifs; addresses limitation of spectral CNNs' assumption of undirected graphs
+- **Key Focus**: Motif-based learning, directed graph convolution
+- **Innovation**: Motif adjacency matrices from directed motifs
+
+#### 13.7 **Gated Graph Sequence Neural Networks (GGNN)** (2016)
+- **Authors**: Li, Yujia; Tarlow, Daniel; Brockschmidt, Marc; Zemel, Richard
+- **Publication**: ICLR 2016; arXiv:1511.05493
+- **URL**: https://arxiv.org/abs/1511.05493
+- **Summary**: Modifies GNNs to use gated recurrent units and extends to output sequences
+- **Key Focus**: Gated recurrence, sequence prediction on graphs
+- **Applications**: Chemistry, natural language semantics, social networks, knowledge bases
+- **GitHub**: Multiple implementations available
+
+#### 13.8 **Neural Message Passing for Quantum Chemistry (MPNN)** (2017)
+- **Authors**: Gilmer, Justin; Schoenholz, Samuel S.; Riley, Patrick F.; Vinyals, Oriol; Dahl, George E.
+- **Publication**: ICML 2017; arXiv:1704.01212
+- **URL**: https://arxiv.org/abs/1704.01212
+- **Summary**: Unified framework for graph neural networks; reformulates existing models as Message Passing Neural Networks
+- **Key Focus**: Message passing framework, molecular property prediction
+- **Innovation**: Two-phase forward pass (message passing + readout); trivially extends to directed multigraphs
+- **Impact**: State-of-the-art on molecular property prediction benchmarks
+
+#### 13.9 **Relational Inductive Biases, Deep Learning, and Graph Networks** (2018)
+- **Authors**: Battaglia, Peter W. et al. (27 authors from DeepMind, Google Brain, MIT, Edinburgh)
+- **Publication**: arXiv:1806.01261 (June 2018)
+- **URL**: https://arxiv.org/abs/1806.01261
+- **Summary**: Presents "graph network" as building block with strong relational inductive bias; generalizes various graph neural network approaches
+- **Key Focus**: Relational reasoning, combinatorial generalization, graph networks framework
+- **Impact**: Highly influential position paper on structured representations in AI
+- **Resources**: Open-source software library released
+
+#### 13.10 **HIN2Vec: Heterogeneous Information Network Embedding** (2017)
+- **Authors**: Fu, Tao-yang; Lee, Wang-Chien; Lei, Zhen
+- **Publication**: CIKM 2017
+- **Summary**: Neural network model capturing semantics in HINs via meta-paths; predicts meta-path instances between node pairs
+- **Key Focus**: Heterogeneous networks, meta-path-based learning
+- **Performance**: Outperforms state-of-art in node classification and link prediction
+
+#### 13.11 **HEBE: HyperEdge-Based Embedding** (2017)
+- **Authors**: Multiple authors
+- **Publication**: 2017
+- **Summary**: Generic framework for learning object embeddings with events in heterogeneous networks using hyperedges
+- **Key Focus**: Event-based modeling, heterogeneous networks
+- **Innovation**: Models proximity in events; robust to data sparseness and scalable
+
+#### 13.12 **DAG-GNN: Directed Acyclic Graph Structure Learning with GNNs** (2019)
+- **Authors**: Yu et al.
+- **Publication**: ICML 2019
+- **URL**: https://proceedings.mlr.press/v97/yu19a.html
+- **Summary**: Generalizes NOTEARS algorithm for DAG structure learning using variational autoencoder framework
+- **Key Focus**: Causal discovery, DAG structure learning
+- **Applications**: Causal inference, structural equation models
+
+#### 13.13 **DAG-GCN: Directed Acyclic Causal Graph Discovery** (2023)
+- **Authors**: Multiple authors
+- **Publication**: 2023
+- **Summary**: Causal graph discovery from real-world data using GCNs; formulates DAG learning as continuous optimization
+- **Key Focus**: Causal discovery, directed acyclic graphs
+- **Performance**: Lowest structural Hamming distance on benchmark datasets
+
+---
+

@@ -12,15 +12,25 @@ This directory contains a comprehensive literature review on graph embeddings fo
 
 ## Statistics
 
-- **Total Papers Identified**: 50+
+- **Total Papers Identified**: 63+
 - **Survey Papers**: 9
 - **Foundational Methods**: 4
 - **Directed Graph-Specific Methods**: 5
 - **GNN Architectures**: 6
 - **Transformer-Based Approaches**: 4
 - **Knowledge Graph Embeddings**: 3
+- **Additional Important Papers**: 13 (from survey analysis)
+  - Magnetic Laplacian methods (MagNet, MSGNN)
+  - Directed graph contrastive learning (DiGCL)
+  - Signed directed networks (SDGNN)
+  - Motif-based methods (MotifNet)
+  - Message passing frameworks (MPNN, GGNN)
+  - Graph networks (Battaglia et al.)
+  - Heterogeneous networks (HIN2Vec, HEBE)
+  - Causal discovery (DAG-GNN, DAG-GCN)
+  - Graph classification (DGCNN)
 - **Other Categories**: Link prediction, temporal graphs, applications, self-supervised learning, etc.
-- **Downloaded PDFs**: 27 papers
+- **Downloaded PDFs**: 27+ papers
 
 ## Key Categories
 
