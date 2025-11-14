@@ -6,13 +6,13 @@ This directory contains a comprehensive literature review on graph embeddings fo
 
 ## Contents
 
-- **search_strategy.md** - Detailed search strategy and comprehensive listing of all papers found (98+ papers)
-- **references.bib** - BibTeX file with all references (98+ entries)
-- **pdfs/** - Directory containing downloaded PDFs (61 papers)
+- **search_strategy.md** - Detailed search strategy and comprehensive listing of all papers found (114+ papers)
+- **references.bib** - BibTeX file with all references (114+ entries)
+- **pdfs/** - Directory containing downloaded PDFs (76 papers)
 
 ## Statistics
 
-- **Total Papers Identified**: 98+
+- **Total Papers Identified**: 114+
 - **Survey Papers**: 9
 - **Foundational Methods**: 4 (DeepWalk, LINE, node2vec, struc2vec)
 - **Directed Graph-Specific Methods**: 5 (HOPE, ATP, DGCN, etc.)
@@ -55,8 +55,17 @@ This directory contains a comprehensive literature review on graph embeddings fo
   - Graph Transformers (GraphGPS, Graphormer)
   - Temporal graphs (TGN)
   - Hyperbolic embeddings (Hyperbolic GNN)
+- **Scalability, Temporal, and Specialized Applications**: 16
+  - Expressiveness (GIN - provably equal to WL test)
+  - Temporal/dynamic graphs (EvolveGCN, JODIE, TGAT, DySAT)
+  - Additional pooling methods (MinCutPool, EdgePool)
+  - Foundational hyperbolic embeddings (Poincaré 2017)
+  - GNN-based recommendation (NGCF, LightGCN)
+  - Scalable training methods (GraphSAINT, ClusterGCN, LADIES)
+  - Graph structure learning (IDGL, LDS-GNN)
+  - Causal discovery (NOTEARS for DAG learning)
 - **Other Categories**: Link prediction, temporal graphs, applications, self-supervised learning, etc.
-- **Downloaded PDFs**: 61 papers
+- **Downloaded PDFs**: 76 papers
 
 ## Key Categories
 

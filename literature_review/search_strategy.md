@@ -850,3 +850,170 @@
 
 ---
 
+### 17. Scalability, Temporal Dynamics, and Specialized Applications
+
+#### 17.1 **GIN: How Powerful are Graph Neural Networks?** (2019)
+- **Authors**: Xu, Keyulu; Hu, Weihua; Leskovec, Jure; Jegelka, Stefanie
+- **Publication**: ICLR 2019; arXiv:1810.00826
+- **URL**: https://arxiv.org/abs/1810.00826
+- **Summary**: Theoretical analysis showing GNNs are at most as powerful as WL test; introduces GIN with maximal discriminative power
+- **Key Focus**: Expressiveness, graph isomorphism
+- **Innovation**: Provably most expressive GNN architecture equal to WL test; uses injective aggregation (sum)
+- **Theory**: Characterizes limitations of popular GNNs (GCN, GraphSAGE)
+- **Performance**: Near-perfect fitting on graph classification benchmarks
+- **GitHub**: https://github.com/weihua916/powerful-gnns
+
+#### 17.2 **EvolveGCN: Evolving Graph Convolutional Networks for Dynamic Graphs** (2020)
+- **Authors**: Pareja, Aldo; Domeniconi, Giacomo; Chen, Jie; Ma, Tengfei; Suzumura, Toyotaro; Kanezashi, Hiroki; Kaler, Tim; Schardl, Tao; Leiserson, Charles
+- **Publication**: AAAI 2020; arXiv:1902.10191
+- **URL**: https://arxiv.org/abs/1902.10191
+- **Summary**: Uses RNN (LSTM/GRU) to evolve GCN parameters over time rather than node representations
+- **Key Focus**: Dynamic graphs, temporal evolution
+- **Innovation**: Evolves weight matrices instead of embeddings; two variants (EvolveGCN-H, EvolveGCN-O)
+- **Application**: Link prediction on dynamic graphs
+- **Performance**: Outperforms static GCN and temporal baselines
+
+#### 17.3 **JODIE: Predicting Dynamic Embedding Trajectory in Temporal Interaction Networks** (2019)
+- **Authors**: Kumar, Srijan; Zhang, Xikun; Leskovec, Jure
+- **Publication**: KDD 2019; arXiv:1908.01207
+- **URL**: https://arxiv.org/abs/1908.01207
+- **Summary**: RNN-based model for continuous-time dynamic graphs; predicts future embedding trajectories
+- **Key Focus**: Temporal interaction networks, future state prediction
+- **Innovation**: Coupled recurrent models for users/items; projects embeddings to future times
+- **Application**: Recommendation, user behavior prediction
+- **Performance**: 20%+ improvement over DeepCoevolve on Reddit dataset
+
+#### 17.4 **TGAT: Inductive Representation Learning on Temporal Graphs** (2020)
+- **Authors**: Xu, Da; Ruan, Chuanwei; Korpeoglu, Evren; Kumar, Sushant; Achan, Kannan
+- **Publication**: ICLR 2020; arXiv:2002.07962
+- **URL**: https://arxiv.org/abs/2002.07962
+- **Summary**: Temporal graph attention using functional time encoding; fully inductive framework
+- **Key Focus**: Temporal graphs, attention mechanism
+- **Innovation**: Time encoding as Bochner's theorem; temporal self-attention
+- **Performance**: State-of-the-art on Wikipedia, Reddit temporal link prediction
+- **Note**: Special case of TGN without memory module
+
+#### 17.5 **DySAT: Deep Neural Representation Learning on Dynamic Graphs via Self-Attention** (2020)
+- **Authors**: Sankar, Aravind; Wu, Yanhong; Gou, Liang; Zhang, Wei; Yang, Hao
+- **Publication**: WSDM 2020; arXiv:1812.09430
+- **URL**: https://arxiv.org/abs/1812.09430
+- **Summary**: Self-attention on discrete graph snapshots; structural and temporal attention layers
+- **Key Focus**: Dynamic graph snapshots, dual self-attention
+- **Innovation**: Combines graph structural attention with temporal attention across snapshots
+- **Application**: Link prediction, node classification on evolving graphs
+- **Performance**: Outperforms temporal random walk and RNN-based methods
+
+#### 17.6 **MinCutPool: Graph Pooling via Mincut Optimization** (2020)
+- **Authors**: Bianchi, Filippo Maria; Grattarola, Daniele; Alippi, Cesare
+- **Publication**: ICML 2020
+- **URL**: https://arxiv.org/abs/1907.00481
+- **Summary**: Differentiable pooling based on mincut optimization; unsupervised cluster assignments
+- **Key Focus**: Graph pooling, spectral clustering
+- **Innovation**: MinCut and orthogonality losses; no supervision needed for clustering
+- **Performance**: Equal or better than supervised methods (DiffPool); faster than TopK
+- **Theory**: Connections to spectral clustering and normalized cuts
+
+#### 17.7 **EdgePool: Edge Contraction Pooling for Graph Neural Networks** (2019)
+- **Authors**: Diehl, Frederik
+- **Publication**: arXiv:1905.10990
+- **URL**: https://arxiv.org/abs/1905.10990
+- **Summary**: Pooling via learned edge contraction scores; maintains edge-centric view
+- **Key Focus**: Graph pooling, edge contraction
+- **Innovation**: Learns which edges to contract; preserves local structure
+- **Application**: Graph classification
+- **Comparison**: Competitive with DiffPool and TopKPool
+
+#### 17.8 **Poincaré Embeddings for Learning Hierarchical Representations** (2017)
+- **Authors**: Nickel, Maximilian; Kiela, Douwe
+- **Publication**: NeurIPS 2017; arXiv:1705.08039
+- **URL**: https://arxiv.org/abs/1705.08039
+- **Summary**: Embeds hierarchical data in hyperbolic (Poincaré ball) space; exponentially more efficient than Euclidean
+- **Key Focus**: Hierarchical structure, hyperbolic geometry
+- **Innovation**: Riemannian optimization for hyperbolic embeddings; captures tree-like hierarchies
+- **Theory**: Hyperbolic space grows exponentially, ideal for hierarchies
+- **Application**: WordNet embeddings, taxonomy embedding
+- **Performance**: State-of-the-art on lexical entailment with far fewer dimensions
+
+#### 17.9 **NGCF: Neural Graph Collaborative Filtering** (2019)
+- **Authors**: Wang, Xiang; He, Xiangnan; Wang, Meng; Feng, Fuli; Chua, Tat-Seng
+- **Publication**: SIGIR 2019; arXiv:1905.08108
+- **URL**: https://arxiv.org/abs/1905.08108
+- **Summary**: Explicit high-order connectivity modeling for collaborative filtering via message passing on user-item bipartite graph
+- **Key Focus**: Recommendation systems, collaborative filtering
+- **Innovation**: Propagates collaborative signal explicitly through user-item graph
+- **Application**: Recommendation, matrix completion
+- **Performance**: Significant improvements on Gowalla, Yelp, Amazon-Book
+
+#### 17.10 **LightGCN: Simplifying and Powering Graph Convolution Network for Recommendation** (2020)
+- **Authors**: He, Xiangnan; Deng, Kuan; Wang, Xiang; Li, Yan; Zhang, Yongdong; Wang, Meng
+- **Publication**: SIGIR 2020; arXiv:2002.02126
+- **URL**: https://arxiv.org/abs/2002.02126
+- **Summary**: Simplified GCN removing feature transformation and nonlinearity; only neighborhood aggregation and layer combination
+- **Key Focus**: Recommendation, simplification
+- **Innovation**: Removes unnecessary components from GCN for collaborative filtering
+- **Performance**: Outperforms NGCF with simpler architecture; faster training
+- **Analysis**: Shows feature transform and activation hurt performance on CF tasks
+
+#### 17.11 **GraphSAINT: Graph Sampling Based Inductive Learning** (2020)
+- **Authors**: Zeng, Hanqing; Zhou, Hongkuan; Srivastava, Ajitesh; Kannan, Rajgopal; Prasanna, Viktor
+- **Publication**: ICLR 2020; arXiv:1907.04931
+- **URL**: https://arxiv.org/abs/1907.04931
+- **Summary**: Samples subgraphs (not nodes/layers) for minibatch training; normalization to remove bias
+- **Key Focus**: Scalability, graph sampling
+- **Innovation**: Subgraph sampling with variance reduction; multiple sampling schemes (node, edge, random walk)
+- **Performance**: F1 0.995 on PPI, 0.970 on Reddit; faster than GraphSAGE
+- **Scalability**: Handles graphs with millions of nodes
+
+#### 17.12 **Cluster-GCN: An Efficient Algorithm for Training Deep GCNs** (2019)
+- **Authors**: Chiang, Wei-Lin; Liu, Xuanqing; Si, Si; Li, Yang; Bengio, Samy; Hsieh, Cho-Jui
+- **Publication**: KDD 2019; arXiv:1905.07953
+- **URL**: https://arxiv.org/abs/1905.07953
+- **Summary**: Pre-clusters graph, then samples clusters as minibatches; reduces memory and improves locality
+- **Key Focus**: Scalability, memory efficiency
+- **Innovation**: Graph partitioning for batch construction; enables deeper GCNs
+- **Performance**: 5x faster than GraphSAGE on Reddit; trains on billion-edge graphs
+- **Analysis**: Addresses neighbor explosion problem
+
+#### 17.13 **LADIES: Layer-Dependent Importance Sampling for Training Deep GCNs** (2019)
+- **Authors**: Zou, Difan; Hu, Ziniu; Wang, Yewen; Jiang, Song; Sun, Yizhou; Gu, Quanquan
+- **Publication**: NeurIPS 2019; arXiv:1911.07323
+- **URL**: https://arxiv.org/abs/1911.07323
+- **Summary**: Layer-wise importance sampling considering dependencies between layers
+- **Key Focus**: Scalability, variance reduction
+- **Innovation**: Importance sampling tailored to each GCN layer; theoretical variance bounds
+- **Performance**: Lower variance than uniform sampling; competitive with GraphSAINT
+- **Theory**: Provable variance reduction guarantees
+
+#### 17.14 **IDGL: Iterative Deep Graph Learning for Graph Neural Networks** (2020)
+- **Authors**: Chen, Yu; Wu, Lingfei; Zaki, Mohammed J.
+- **Publication**: NeurIPS 2020; arXiv:2006.13009
+- **URL**: https://arxiv.org/abs/2006.13009
+- **Summary**: Jointly learns graph structure and node embeddings in alternating optimization; adaptive graph regularization
+- **Key Focus**: Graph structure learning, robustness
+- **Innovation**: Iterative refinement of graph and embeddings; metric learning for edge weights
+- **Application**: Semi-supervised learning, robustness to adversarial graphs
+- **Performance**: Outperforms LDS on 9 benchmarks; more robust to noisy/adversarial graphs
+
+#### 17.15 **LDS-GNN: Learning Discrete Structures for Graph Neural Networks** (2019)
+- **Authors**: Franceschi, Luca; Niepert, Mathias; Pontil, Massimiliano; He, Xiao
+- **Publication**: ICML 2019; arXiv:1903.11960
+- **URL**: https://arxiv.org/abs/1903.11960
+- **Summary**: Learns discrete graph structure with Bernoulli edge distributions; end-to-end differentiable
+- **Key Focus**: Graph structure learning
+- **Innovation**: Gumbel-softmax for discrete edge sampling; validation-based learning
+- **Application**: Semi-supervised node classification with uncertain graph structure
+- **Performance**: Improves accuracy when input graph is noisy or suboptimal
+
+#### 17.16 **NOTEARS: DAGs with NO TEARS** (2018)
+- **Authors**: Zheng, Xun; Aragam, Bryon; Ravikumar, Pradeep; Xing, Eric P.
+- **Publication**: NeurIPS 2018; arXiv:1803.01422
+- **URL**: https://arxiv.org/abs/1803.01422
+- **Summary**: Continuous optimization for DAG structure learning; formulates acyclicity as smooth constraint h(W)=0
+- **Key Focus**: Causal discovery, structure learning
+- **Innovation**: Replaces combinatorial search with continuous optimization via acyclicity characterization
+- **Theory**: tr(e^(W⊙W)) = d iff W represents a DAG
+- **Performance**: Scalable to hundreds of nodes; basis for many follow-up methods
+- **Impact**: Highly influential in causal discovery literature
+
+---
+
