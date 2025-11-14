@@ -1017,3 +1017,120 @@
 
 ---
 
+### 18. Recent Advances (2024-2025): State-of-the-Art Methods
+
+#### 18.1 **WaveGC: General Graph Spectral Wavelet Convolution via Chebyshev Order Decomposition** (2024-2025)
+- **Authors**: Not specified in available sources
+- **Publication**: arXiv:2405.13806 (May 2024, updated May 2025)
+- **URL**: https://arxiv.org/abs/2405.13806
+- **Summary**: Novel wavelet-based GCN integrating multi-resolution spectral bases; decomposes Chebyshev polynomials into odd/even terms
+- **Key Focus**: Spectral graph learning, wavelets, multi-resolution analysis
+- **Innovation**: Separately combines odd and even Chebyshev terms to learn general graph wavelets; strictly satisfies wavelet admissibility
+- **Performance**: Effectively captures and decouples short-range and long-range information
+- **Theory**: Superior filtering flexibility compared to existing graph wavelet neural networks
+
+#### 18.2 **Graph Foundation Models: Concepts, Opportunities and Challenges** (2024-2025)
+- **Authors**: Multiple authors (comprehensive survey)
+- **Publication**: TPAMI 2025; arXiv:2310.11829
+- **URL**: https://arxiv.org/abs/2310.11829
+- **Summary**: Comprehensive survey on graph foundation models (GFMs); models pre-trained on extensive graph data for adaptation to diverse tasks
+- **Key Focus**: Foundation models, transfer learning, pre-training
+- **Innovation**: Paradigm shift toward large-scale pre-training for graphs
+- **Coverage**: Emergence and homogenization capabilities; integration with LLMs
+- **Impact**: Defines new research direction combining GNNs with foundation model paradigm
+
+#### 18.3 **An End-to-End Attention-Based Approach for Learning on Graphs** (2024-2025)
+- **Authors**: Not fully specified
+- **Publication**: Nature Communications 2025; arXiv:2402.10793 (revised June 2025)
+- **URL**: https://arxiv.org/abs/2402.10793
+- **Summary**: Purely attention-based approach with encoder and attention pooling; no message passing
+- **Key Focus**: Graph Transformers, attention mechanisms
+- **Innovation**: Outperforms fine-tuned message passing baselines and recent transformer methods
+- **Performance**: Superior results on 70+ node and graph-level tasks
+- **Design**: End-to-end learning without traditional GNN message passing
+
+#### 18.4 **The Heterophilic Graph Learning Handbook** (2024)
+- **Authors**: Multiple contributors
+- **Publication**: arXiv:2407.09618 (2024)
+- **URL**: https://arxiv.org/abs/2407.09618
+- **Summary**: Comprehensive handbook on learning from graphs with heterophily (dissimilar connected nodes)
+- **Key Focus**: Heterophily, non-homophilic graphs
+- **Coverage**: Benchmark datasets, homophily metrics, supervised/unsupervised methods, theoretical analysis
+- **Taxonomy**: Categorizes heterophilic datasets into malignant, benign, and ambiguous
+- **Impact**: Essential resource for understanding GNN performance on heterophilic graphs
+
+#### 18.5 **Temporal Graph Learning in 2024: Survey and Framework** (2024)
+- **Authors**: Shenyang Huang and collaborators
+- **Publication**: Towards Data Science 2024
+- **Summary**: Comprehensive survey of temporal graph learning developments; covers discrete and continuous-time dynamic graphs
+- **Key Focus**: Temporal GNNs, dynamic graphs, continuous-time models
+- **Coverage**: Graph state-space models, graph Kalman filters, diffusion-based models
+- **Recent Methods**: TGB benchmark, DistTGL for distributed training
+- **Directions**: Continuous space-time models, long-range propagation on CTDGs
+
+#### 18.6 **E(n) Equivariant Graph Neural Networks** (2024-2025 Applications)
+- **Authors**: Satorras, Hoogeboom, Welling (foundational); recent applications by various authors
+- **Publication**: Multiple 2024-2025 applications in J. Physical Chemistry B, Nature Communications, npj Computational Materials
+- **Summary**: GNNs incorporating E(n) symmetry equivariance for 3D molecular structures and geometric data
+- **Key Focus**: Geometric deep learning, equivariance, molecular modeling
+- **Innovation**: Efficient learning using only distance norms without higher-order representations
+- **Applications**: Interatomic potentials, molecular property prediction, drug discovery
+- **Performance**: Data-efficient and accurate for 3D structures
+
+#### 18.7 **Geometric GNNs Survey: Data Structures, Models and Applications** (2024-2025)
+- **Authors**: Multiple authors
+- **Publication**: Frontiers of Computer Science 2025
+- **Summary**: Comprehensive survey of geometric GNNs with invariant/equivariant properties
+- **Key Focus**: Geometric graphs, SE(3)/E(3) equivariance, topological features
+- **Coverage**: Complete local frames for SE(3) equivariance, rotation equivariance, topological neural networks
+- **Applications**: 3D point clouds, molecular modeling, physics simulation
+- **Recent Advances**: Large language geometry models combining LLMs with equivariance (2025)
+
+#### 18.8 **DGTN: Graph-Enhanced Transformer with Diffusive Attention** (2024)
+- **Authors**: Not fully specified
+- **Publication**: arXiv:2511.05483 (November 2024)
+- **URL**: https://arxiv.org/abs/2511.05483
+- **Summary**: Novel architecture co-learning GNN weights for structural priors and transformer attention via diffusion
+- **Key Focus**: Graph Transformers, diffusion mechanisms, enzyme prediction
+- **Innovation**: Diffusive attention gating mechanism; integrates graph structure with transformers
+- **Application**: Enzyme ΔΔG prediction for biochemistry
+
+#### 18.9 **GNNExplainer and Recent Explainability Advances** (2019; 2024 Extensions)
+- **Authors**: Ying et al. (original); various 2024 extensions
+- **Publication**: NeurIPS 2019 (foundational); 2024 extensions at IDEAL, BIBM
+- **URL**: https://arxiv.org/abs/1903.03894
+- **Summary**: First general model-agnostic approach for interpreting GNN predictions; identifies important subgraphs and features
+- **Key Focus**: Explainability, interpretability
+- **Innovation**: Compact subgraph structure identification for GNN decision explanations
+- **Performance**: 17-43% improvement over baselines in explanation accuracy
+- **2024 Extensions**: Causal explanation, seizure onset zone localization, drug-disease mechanisms
+- **Limitations**: Single-instance explanations; must retrain for each explanation
+
+#### 18.10 **Graph-Aware Isomorphic Attention for Adaptive Dynamics in Transformers** (2025)
+- **Authors**: Not fully specified
+- **Publication**: arXiv:2501.02393 (January 2025)
+- **URL**: https://arxiv.org/abs/2501.02393
+- **Summary**: Sparse GIN-Attention fine-tuning for improved training dynamics and generalization
+- **Key Focus**: Graph attention, isomorphism awareness
+- **Innovation**: Combines graph isomorphism networks with adaptive attention mechanisms
+- **Performance**: Better generalization through graph-aware attention
+
+#### 18.11 **Longer Attention Span: Graph Processing for Transformer Context** (2025)
+- **Authors**: Not fully specified
+- **Publication**: arXiv:2502.01659 (February 2025)
+- **URL**: https://arxiv.org/abs/2502.01659
+- **Summary**: Graph computing view of attention where tokens are nodes; uses sparse graph processing techniques
+- **Key Focus**: Efficient transformers, graph view of attention
+- **Innovation**: Applies graph processing techniques to increase transformer context length
+- **Application**: Long-context language modeling
+
+#### 18.12 **Dynamic Temporal Graph Learning: Recent Advances** (2024)
+- **Authors**: Various (survey/collection)
+- **Publication**: Multiple 2024 venues (Knowledge-Based Systems, ScienceDirect)
+- **Coverage**: CATodyNet for time series, DyAtGNN for dynamic attention, spatio-temporal GNNs for prediction
+- **Key Methods**: Cross-attention temporal dynamic GNN, continuous-time event sequences
+- **Applications**: Multivariate time series classification, remaining useful life prediction
+- **Survey**: Comprehensive overview distinguishing D-TDG (discrete) and C-TDG (continuous-time) approaches
+
+---
+

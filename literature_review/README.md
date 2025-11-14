@@ -6,13 +6,13 @@ This directory contains a comprehensive literature review on graph embeddings fo
 
 ## Contents
 
-- **search_strategy.md** - Detailed search strategy and comprehensive listing of all papers found (114+ papers)
-- **references.bib** - BibTeX file with all references (114+ entries)
-- **pdfs/** - Directory containing downloaded PDFs (76 papers)
+- **search_strategy.md** - Detailed search strategy and comprehensive listing of all papers found (126+ papers)
+- **references.bib** - BibTeX file with all references (126+ entries)
+- **pdfs/** - Directory containing downloaded PDFs (84 papers)
 
 ## Statistics
 
-- **Total Papers Identified**: 114+
+- **Total Papers Identified**: 126+
 - **Survey Papers**: 9
 - **Foundational Methods**: 4 (DeepWalk, LINE, node2vec, struc2vec)
 - **Directed Graph-Specific Methods**: 5 (HOPE, ATP, DGCN, etc.)
@@ -64,8 +64,20 @@ This directory contains a comprehensive literature review on graph embeddings fo
   - Scalable training methods (GraphSAINT, ClusterGCN, LADIES)
   - Graph structure learning (IDGL, LDS-GNN)
   - Causal discovery (NOTEARS for DAG learning)
+- **Recent Advances (2024-2025)**: 12
+  - Latest spectral methods (WaveGC with Chebyshev wavelets)
+  - Graph foundation models (paradigm shift toward pre-training)
+  - End-to-end attention approaches (outperform message passing on 70+ tasks)
+  - Heterophily learning handbook (comprehensive resource)
+  - Temporal graph learning 2024 survey
+  - E(n) equivariant GNNs (geometric deep learning)
+  - Geometric GNN survey (SE(3)/E(3) equivariance)
+  - Graph-enhanced transformers (DGTN with diffusive attention)
+  - GNN explainability (GNNExplainer and 2024 extensions)
+  - Graph-aware attention mechanisms (isomorphic attention, longer context)
+  - Dynamic temporal learning advances
 - **Other Categories**: Link prediction, temporal graphs, applications, self-supervised learning, etc.
-- **Downloaded PDFs**: 76 papers
+- **Downloaded PDFs**: 84 papers
 
 ## Key Categories
 
