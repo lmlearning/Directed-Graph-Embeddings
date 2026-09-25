@@ -1,4 +1,4 @@
-# Directed Graph Embeddings
+# Directed Graph Embeddings: Literature Review
 
 A research collection on **directed graph embeddings and graph representation learning**.
 
